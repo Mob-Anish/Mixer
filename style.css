@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+}
+
+
+
+
+.boxer
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.boxer>*
+{
+    flex: 1 1 auto;
+}
+
+.box-1
+{
+    background-image: linear-gradient(to right bottom,#7f8c8d,#95a5a6);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-2
+{
+    background-image: linear-gradient(to right bottom, #38ada9, #079992);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-3
+{
+    background-image: linear-gradient(to right bottom, #eb2f06, #e55039);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-4
+{
+    background-image: linear-gradient(to right bottom, #0be881, #05c46b);
+    background-attachment: fixed;
+
+    background-size: cover;
+}
+
+.box-5
+{
+    background-image: linear-gradient(to right bottom,#b4ab03, #eee84b);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-6
+{
+    background-image: url('img/background-6.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.boxes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.speaker
+{
+    font-size: 6rem;
+    border: 0.3rem solid rgb(255, 255, 255) !important;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+}
+
+.speaker:hover
+{
+    transform: scale(1.2);
+}
+
+.speaker:active
+{
+    transform: scale(0.99);
+}
+
+
+.boxes:hover .speaker
+{
+    opacity: 1;
+    visibility: visible;
+}
